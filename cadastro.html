@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Doguito Petshop | Criar conta</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="./assets/css/base/base.css">
+    
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
+    
+    <link rel="stylesheet" href="./assets/css/componentes/cartao.css">
+    
+    <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
+    
+    <link rel="stylesheet" href="./assets/css/componentes/botao.css">
+</head>
+
+
+
+<body>
+      <main class="container flex flex--coluna flex--centro">
+
+        <header class="cadastro-cabecalho">
+        
+            <img src="./assets/img/doguito.svg" alt="Logo Doguito" class="cadastro-cabecalho__logo">
+        
+            <h1 class="cadastro-cabecalho__titulo">PetShop</h1>
+        
+        </header>
+        
+        <section class="cartao">
+        
+            <h2 class="cartao__titulo">Complete seu cadastro</h2>
+        
+            <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
+        
+                <fieldset>
+        
+                    <legend class="formulario__legenda">Informações básicas</legend>
+        
+                    <div class="input-container">
+        
+                        <input required aria-required="true" name="nome" data-tipo="nome" id="nome" minlength="4" class="input" type="text" placeholder="Nome">
+        
+                        <label class="input-label" for="nome">Nome</label>
+        
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+        
+                    </div>
+        
+                    <div class="input-container">
+        
+                        <input required aria-required="true" name="email" data-tipo="email"
+                        
+                        id="email" class="input" type="email" placeholder="Email"
+                        
+                        title="Precisa haver um @ e um serviço, como .com">
+        
+                        <label class="input-label" for="email">Email</label>
+        
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+        
+                    </div>
+        
+                    <div class="input-container">
+        
+                        <input required aria-required="true" data-tipo="senha"
+                        
+                        name="senha" id="senha" class="input"
+                        
+                        type="password" placeholder="Senha"
+                        
+                        pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[a-zA-Z0-9].{6,12}$"
+                        
+                        title="A senha precisa conter uma letra maiúscula, uma letra minúscula e um número, não pode conter símbolos e precisa ter de 6 a 12 caracteres.">
+        
+                        <label class="input-label" for="senha">Senha</label>
+        
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+        
+                    </div>
+        
+                </fieldset>
+        
+                <fieldset>
+        
+                    <legend class="formulario__legenda">Informações pessoais</legend>
+        
+                    <div class="input-container">
+        
+                        <input required aria-required="true" data-tipo="dataNascimento" name="nascimento" id="nascimento" class="input" type="date" placeholder="Data de nascimento">
+        
+                        <label class="input-label" for="nascimento">Data de nascimento</label>
+        
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+        
+                    </div>
+        
+                    <div class="input-container">
+        
+                        <input required aria-required="true" data-tipo="cpf" name="cpf" id="cpf" class="input" type="number" minlength="11" maxlength="14" placeholder="CPF">
+        
+                        <label class="input-label" for="cpf">CPF</label>
+        
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+        
+                    </div>
+        
+                </fieldset>
+        
+                <fieldset>
+        
+                    <legend class="formulario__legenda">Endereço</legend>
+        
+                    <div class="input-container">
+        
+                        <input required aria-required="true" name="cep" id="cep" class="input" type="text" placeholder="CEP" data-tipo="cep" pattern="[\d]{5}-?[\d]{3}">
+        
+                        <label class="input-label" for="cep">CEP</label>
+        
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+        
+                    </div>
+        
+                    <div class="input-container">
+        
+                        <input required aria-required="true" name="logradouro" id="logradouro" class="input" type="text" placeholder="Logradouro" data-tipo="logradouro">
+        
+                        <label class="input-label" for="logradouro">Logradouro</label>
+        
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+        
+                    </div>
+        
+                    <div class="input-container">
+        
+                        <input required aria-required="true" name="cidade" id="cidade" class="input" type="text" placeholder="Cidade" data-tipo="cidade">
+        
+                        <label class="input-label" for="cidade">Cidade</label>
+        
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+        
+                    </div>
+        
+                    <div class="input-container">
+        
+                        <input required aria-required="true" name="estado" id="estado" class="input" type="text" placeholder="Estado" data-tipo="estado">
+        
+                        <label class="input-label" for="estado">Estado</label>
+        
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+        
+                    </div>
+        
+                </fieldset>
+        
+                <button class="botao">Cadastrar</a>
+        
+            </form>
+        
+        </section>
+
+      </main>
+
+    <script type="module" src="./js/app.js"></script>
+
+</body>
+</html>
